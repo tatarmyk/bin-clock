@@ -23,7 +23,10 @@ def update_clock():
 root = tk.Tk()
 root.title("Clock")
 
-clock_label = tk.Label(root, font=("Arial", 24), bg="white", fg="black")
+# Make the window stay on top
+root.attributes('-topmost', 1)
+
+clock_label = tk.Label(root, font=("Arial", 24), bg="#eef5db", fg="#39375b")
 clock_label.pack(padx=20, pady=20)
 
 update_clock()
